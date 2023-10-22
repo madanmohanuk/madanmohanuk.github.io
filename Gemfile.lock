@@ -91,14 +91,24 @@ PLATFORMS
 
 DEPENDENCIES
   faraday-retry
-  jekyll
+  google-protobuf
+  jekyll (~> 4.3)
   jekyll-feed
   jekyll-gist
   jekyll-paginate
+  jekyll-sass-converter
   jekyll-seo-tag
   jekyll-sitemap
+  kramdown
+  mercenary
+  public_suffix
   pygments.rb
-  redcarpet (~> 3.3, >= 3.3.4)
+  redcarpet
+  rouge
+  sass-embedded
+  terminal-table
+  unicode-display_width
+  webrick
 
 BUNDLED WITH
    2.4.21
