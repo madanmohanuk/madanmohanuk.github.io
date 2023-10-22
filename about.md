@@ -2,4 +2,4 @@
 layout: page
 title: About
 ---
-This page tells you a little bit about me.
+Hello, there! My name is Madan. I'm a PhD student at the Cancer Science Institute, National University of Singapore. 
