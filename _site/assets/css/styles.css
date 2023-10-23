@@ -46,31 +46,31 @@
   .sidebar a {
     color: #fff;
   }
-  
+
   /* About section */
   .sidebar-about h1 {
     color: #fff;
     margin-top: 0;
     font-family: "Abril Fatface", serif;
-    font-size: 3.25rem;
+    font-size: 2.6rem;
+    text-decoration: none;
   }
   
   /* Sidebar nav */
   .sidebar-nav {
     margin-bottom: 1rem;
   }
+
   .sidebar-nav-item {
     display: block;
     line-height: 1.75;
+    text-decoration: none;
   }
+
   a.sidebar-nav-item:hover,
   a.sidebar-nav-item:focus {
     text-decoration: underline;
   }
-  .sidebar-nav-item.active {
-    font-weight: bold;
-  }
-  
   
   /* Container
    *

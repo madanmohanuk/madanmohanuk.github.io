@@ -4,22 +4,22 @@
   {% include head.html %}
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG8FS4T83W"></script>
-<script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PG8FS4T83W"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-PG8FS4T83W');
-</script>
+  </script>
 
   <body>
-
     {% include sidebar.html %}
 
     <div class="content container">
+      <h1 class="page-title">{{ page.title }}</h1>
       {{ content }}
     </div>
-
   </body>
+
 </html>

@@ -1,5 +1,0 @@
----
-layout: page
-title: About
----
-Hello, there! My name is Madan. I'm a PhD student at the Cancer Science Institute, National University of Singapore. 
