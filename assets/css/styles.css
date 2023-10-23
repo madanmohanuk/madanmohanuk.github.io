@@ -102,14 +102,14 @@
   /* flex divs for logos
    */
   
-  .flex-parent-element {
+  div.flex-container {
     display: flex;
-    width: 50%;
+    flex-wrap: wrap;
   }
-  
-  .flex-child-element {
-    flex: 1;
-    margin: 10px;
+
+  div.item{
+    margin: 2%;
   }
+
   
   
