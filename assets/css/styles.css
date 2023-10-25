@@ -31,6 +31,7 @@
     color: rgba(255,255,255,.5);
     background-color: #202020;
   }
+  
   @media (min-width: 48em) {
     .sidebar {
       position: fixed;
@@ -73,8 +74,15 @@
   }
 
   .sidebar-footer {
-    position: relative;
-    left: 0;
+   position: relative;
+   bottom: 0;
+   left: 0;
+  }
+  @media (min-width: 48em) {
+    .sidebar-footer {
+      position: fixed;
+      width: 18rem;
+    }
   }
 
   .sidebar-footer ul {
