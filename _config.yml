@@ -1,6 +1,7 @@
 # Info
 title: Madan Mohan
 url: https://madanmohanuk.com/
+baseurl: ''
 
 plugins:
   - jekyll-feed
