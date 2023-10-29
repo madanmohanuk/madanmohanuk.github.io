@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Favorite books
+description: A list of Madan Mohan's favorite books
 ---
 A list of my all-time favorite books in no particular order
 
