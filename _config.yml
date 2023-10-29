@@ -1,3 +1,7 @@
+# Info
+title: Madan Mohan
+url: https://madanmohanuk.com/
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -7,5 +11,3 @@ plugins:
 # Permalinks
 permalink: /:categories/:title
 
-# Info
-title: Madan Mohan
