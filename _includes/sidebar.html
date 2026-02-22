@@ -1,25 +1,54 @@
-<div class="sidebar">
-  <div class="container">
-    <div class="sidebar-about">
-      <h1>Madan Mohan</h1>
-    </div>
-    <nav class="sidebar-nav">
+<button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="sidebar">
+  <i class="fa-solid fa-bars"></i>
+</button>
 
-      <a class="sidebar-nav-item{% if page.name == 'index.html' %}-active{% endif %}" href="{% link index.html %}">About</a>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-      <a class="sidebar-nav-item" href="https://artofacademia.com/" target="_blank">Podcast <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-about">
+    <h1>Madan Mohan</h1>
+  </div>
+  <nav class="sidebar-nav">
 
-      <a class="sidebar-nav-item" href="https://madanmohan.substack.com/" target="_blank">Substack <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i> </a>
+    <a class="sidebar-nav-item{% if page.name == 'index.html' %}-active{% endif %}" href="{% link index.html %}">About</a>
 
-      <a class="sidebar-nav-item" href="https://mmuk.notion.site/Lab-Notebook-3498238a2fc447068d725eb237a69547" target="_blank">Notion Lab notebook Template <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>
-
-      <a class="sidebar-nav-item{% if page.name == 'books.md' %}-active{% endif %}" href="{% link books.md %}">Favorite Books</a>
-    </nav>
-    <div class="sidebar-footer">
-      <ul>
-        <li> <a class="item" href="https://github.com/madanmohanuk" target="_blank"> <i class="fa-brands fa-github fa-xl"></i> </a> </li>
-      </ul>
-    </div>
+<a class="sidebar-nav-item{% if page.name == 'books.md' %}-active{% endif %}" href="{% link books.md %}">Favorite Books</a>
+  </nav>
+  <div class="sidebar-footer">
+    <ul>
+      <li><a href="https://artofacademia.com/" target="_blank" aria-label="Podcast"><i class="fa-solid fa-podcast fa-xl"></i></a></li>
+      <li><a href="https://madanmohan.substack.com/" target="_blank" aria-label="Substack"><i class="fa-solid fa-newspaper fa-xl"></i></a></li>
+      <li><a href="https://github.com/madanmohanuk" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github fa-xl"></i></a></li>
+    </ul>
   </div>
 </div>
 
+<script>
+  (function () {
+    var toggle = document.getElementById('sidebar-toggle');
+    var sidebar = document.getElementById('sidebar');
+    var overlay = document.getElementById('sidebar-overlay');
+
+    function openSidebar() {
+      sidebar.classList.add('is-open');
+      overlay.classList.add('is-active');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeSidebar() {
+      sidebar.classList.remove('is-open');
+      overlay.classList.remove('is-active');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', function () {
+      sidebar.classList.contains('is-open') ? closeSidebar() : openSidebar();
+    });
+
+    overlay.addEventListener('click', closeSidebar);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeSidebar();
+    });
+  })();
+</script>
